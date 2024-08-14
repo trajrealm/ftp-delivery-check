@@ -1,0 +1,35 @@
+apps = {
+    "app-1": {
+        "delivered-on": "weekdays",
+        "publish-by": "6:45",
+        "file-prefix": "App1_Daily_Americas_",
+        "db-config": "DBSERVER1",
+        "subscriber-key": "APP-1-AMER",
+        "subscriber-table": "app_1_subscriber",
+        "subscriber-column": "app_1",
+        "skip-check-days": [5, 6]  # Saturday, Sunday
+
+    },
+    "app-2": {
+        "delivered-on": "weekdays",
+        "publish-by": "23:15",
+        "file-prefix": "App2_Daily_Europe_",
+        "db-config": "DBSERVER2",
+        "subscriber-key": "APP-2-EUR",
+        "subscriber-table": "app_2_subscriber",
+        "subscriber-column": "app_2",
+        "nyt-lead": 1,
+        "skip-check-days": [4, 5]  # Friday, Saturday
+    },
+    "app-3": {
+        "delivered-on": "weekdays",
+        "publish-by": "14:00",
+        "file-prefix": "App3_Daily_US_",
+        "db-config": "DBSERVER3",
+        "subscriber-key": "APP-3-US",
+        "subscriber-table": "app_3_subscriber",
+        "subscriber-column": "app_3",
+        "nyt-lead": 1,
+        "skip-check-days": [4, 5]  # Friday, Saturday
+    },
+}
